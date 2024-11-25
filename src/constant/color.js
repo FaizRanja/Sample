@@ -1,0 +1,5 @@
+export const orangr="#ea7070"
+export const grayColor = "rgba(247,247,247,1)"
+export const blueColor = "#2649ab"
+export const matBlack="#1c1c1c"
+export  const bggranded="linear-gradient(rgb(255 255 209), rgb(249 159 159 ))"

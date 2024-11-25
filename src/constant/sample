@@ -1,0 +1,52 @@
+import { Grid, IconButton, Menu, Tooltip } from '@mui/material'
+import React from 'react'
+import Profile from '../Specific/Profile'
+import { Box } from '@mui/system'
+
+const ProfileMenu = () => {
+  return (
+    <Grid
+    item
+    md={4}
+    lg={3}
+    sx={{
+      display: { xs: "none", sm: "block" },
+      padding: "2rem",
+      bgcolor: "rgba(0,0,0,0.85)",
+    }}
+    height="100%"
+  >
+      <Box
+sx={{
+  display: {
+    xs: "",
+    sm: "none",
+  },
+  position: "fixed",
+  right: "1rem",
+  top: "1rem",
+}}
+>
+<Tooltip title="Menu">
+  <IconButton>
+    <Menu />
+  </IconButton>
+</Tooltip>
+</Box>
+   <Profile/>
+  </Grid>
+  )
+}
+
+export default ProfileMenu
+
+
+
+return (props) => {
+  const params = useParams();
+  const chatId = params.chatId; // Defaulting chatId to "1" if not found in params
+
+  const handledeleteChat =(e,_id,groupChat)=>{
+   e.preventDefault();
+   console.log("Chat deleted" , _id , groupChat);
+  }
